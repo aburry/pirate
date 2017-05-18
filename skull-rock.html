@@ -20,11 +20,18 @@ p.theend {
   <body>
 
   	<h1>Skull Rock</h1>
-<div id="1">
+<div id="0">
+	<p>There be wooden sailing ships and pirates. Arrr!</p>
+<ul>
+	<li><a href="#1" >Next</a>.</li>
+</ul>
+
+</div><div id="1">
 	<img src="sr-01.jpg"></img>
 	<p>There is a monster pirate.</p>
 <ul>
-	<li><a href="#2" >Next</a>.</li>
+	<li><a href="#8" >Refuse the call</a>.</li>
+	<li><a href="#9" >Adventure</a>.</li>
 </ul>
 
 </div><div id="2">
@@ -67,11 +74,32 @@ p.theend {
 </ul>
 
 </div><div id="7">
-	<p>Encounter the angel.</p>
+	<p>Sheila Nageira returns.</p>
 <ul>
 	<li><a href="#30" >Sacrifice yourself</a>.</li>
 <li><a href="#29" >Destroy the tooth</a>.</li>
 </ul>
+</div><div id="8">
+	<p>There is still a monster pirate.</p>
+<ul>
+	<li><a href="#9" >Next</a>.</li>
+</ul>
+</div><div id="9">
+	<p>Pirate spirit Sheila Nageira presents a plan.</p>
+<ul>
+	<li><a href="#11" >Next</a>.</li>
+</ul>
+</div><div id="11">
+	<p>The sea witch tempts you away.</p>
+<ul>
+	<li><a href="#25" >Succumb</a>.</li>
+	<li><a href="#2" >Resist</a>.</li>
+</ul>
+
+</div><div id="25">
+	<p>Your family and community suffers.</p>
+<p class="theend">The End</p>
+
 
 </div><div id="26">
 	<img src="sr-04.jpg"></img>
@@ -103,7 +131,7 @@ p.theend {
 
 	<script>
 var cstate = { location: window.location.hash };
-var node = function (state) { return 1 < state.location.length ? state.location.substring(1) : '1'; }
+var node = function (state) { return 1 < state.location.length ? state.location.substring(1) : '0'; }
 var display = function(id, v) { document.getElementById(id).style.display = v; }
 var show = function (id) { display(id, 'block'); }
 var hide = function (id) { display(id, 'none'); }
