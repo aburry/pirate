@@ -1,174 +1,184 @@
 <html>
-  <head>
-  	<title>Skull Rock</title>
-<style>
-div {
-  margin: 1em;
-  border: solid;
-  padding: 1em; 
-  display: none;
-  font: 1.5em sans-serif;
-}
-li {
-	line-height: 2;
-}
-p.theend {
-  text-align: center;
-  font-style: italic;}
-</style>
-  </head>
-  <body>
+    <head>
+        <title>Skull Rock</title>
+        <style>
+            div {
+                margin: 1em;
+                border: solid;
+                padding: 1em;
+                display: none;
+                font: 1.5em sans-serif;
+            }
 
-  	<h1>Skull Rock</h1>
-<div id="0">
-	<p>There be wooden sailing ships and pirates. Arrr!</p>
-<ul>
-	<li><a href="#1" >Next</a>.</li>
-</ul>
+            li {
+                line-height: 2;
+            }
 
-</div><div id="1">
-	<img src="sr-01.jpg"></img>
-	<p>There is a monster pirate.</p>
-<ul>
-	<li><a href="#8" >Refuse the call</a>.</li>
-	<li><a href="#9" >Adventure</a>.</li>
-</ul>
-
-</div><div id="2">
-	<p>You encounter the pirate.</p>
-<ul>
-	<li><a href="#12" >Fight</a>.</li>
-	<li><a href="#3" >Lay low</a>.</li>
-</ul>
-
-</div><div id="3">
-	<img src="sr-03.jpg"></img>
-	<p>You are rescued by Alice and Isaac.</p>
-<ul>
-	<li><a href="#28" >Steal the diamond tooth</a>.</li>
-	<li><a href="#4" >Hide and observe</a>.</li>
-</ul>
-
-</div><div id="4">
-	<img src="sr-04.jpg"></img>
-	<p>Kill the demon octopus with a giant anchor.</p>
-<ul>
-	<li><a href="#5" >Steal the diamond tooth</a>.</li>
-	<li><a href="#26" >Find the pirate</a>.</li>
-</ul>
-
-</div><div id="5">
-	<img src="sr-05.jpg"></img>
-	<p>Learn the pirate's tragic tale.</p>
-<ul>
-	<li><a href="#6" >Summon the sea witch</a>.</li>
-	<li><a href="#26" >Find the pirate</a>.</li>
-	<li><a href="#29" >Destroy the tooth</a>.</li>
-</ul>
-
-</div><div id="6">
-	<p>Encounter the sea witch.</p>
-<ul>
-	<li><a href="#27" >Sacrifice yourself</a>.</li>
-<li><a href="#7" >Negotiate with the sea witch</a>.</li>
-</ul>
-
-</div><div id="7">
-	<p>Sheila Nageira returns.</p>
-<ul>
-	<li><a href="#10" >Sacrifice yourself</a>.</li>
-<li><a href="#29" >Destroy the tooth</a>.</li>
-</ul>
-</div><div id="8">
-	<p>There is still a monster pirate.</p>
-<ul>
-	<li><a href="#9" >Next</a>.</li>
-</ul>
-</div><div id="9">
-	<p>Pirate spirit Sheila Nageira presents a plan.</p>
-<ul>
-	<li><a href="#11" >Next</a>.</li>
-</ul>
-
-</div><div id="10">
-	<p>You free the pirate from his curse.</p>
-	<ul>
-	<li><a href="#13" >Next</a>.</li>
-	</ul>
-
-</div><div id="11">
-	<p>The sea witch tempts you away.</p>
-<ul>
-	<li><a href="#25" >Succumb</a>.</li>
-	<li><a href="#2" >Resist</a>.</li>
-</ul>
-
-</div><div id="12">
-	<p>Fight a thrall and get captured.</p>
-<ul>
-	<li><a href="#3" >Next</a>.</li>
-</ul>
-
-</div><div id="13">
-	<p>Outsmart the sea witch.</p>
-<ul>
-	<li><a href="#14" >Next</a>.</li>
-</ul>
-
-</div><div id="14">
-	<img src="sr-30.jpg"></img>
-	<p>Take the dinghy.</p>
-	<ul>
-	<li><a href="#15" >Next</a>.</li>
-	</ul>
-
-</div><div id="15">
-	<p>Return to the ordinary world with the missing children.</p>
-<p class="theend">The End</p>
-
-
-</div><div id="25">
-	<p>Your family and community suffers.</p>
-<p class="theend">The End</p>
-
-
-</div><div id="26">
-	<img src="sr-04.jpg"></img>
-	<p>The pirate kills you.</p>
-<p class="theend">The End</p>
-
-</div><div id="27">
-	<img src="sr-01.jpg"></img>
-	<p>You take the pirate's place in the curse.</p>
-<p class="theend">The End</p>
-
-</div><div id="28">
-	<img src="sr-28.jpg"></img>
-	<p>The demon octopus turns you into a thrall.</p>
-<p class="theend">The End</p>
-
-</div><div id="29">
-	<img src="sr-30.jpg"></img>
-	<p>You destroy the pirate, consigning him to the sea witch.</p>
-<p class="theend">The End</p>
-
-
-</div>
-
-
-	<script>
-var cstate = { location: window.location.hash };
-var node = function (state) { return 1 < state.location.length ? state.location.substring(1) : '0'; }
-var display = function(id, v) { document.getElementById(id).style.display = v; }
-var show = function (id) { display(id, 'block'); }
-var hide = function (id) { display(id, 'none'); }
-var navigated = function () {
-  hide(node(cstate));
-  cstate = { location: window.location.hash };
-  show(node(cstate));
-}
-window.addEventListener('hashchange', navigated, false);
-navigated();
-	</script>
-  </body>
+            p.theend {
+                text-align: center;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Skull Rock</h1>
+        <div id="0">
+            <p>There be wooden sailing ships and pirates. Arrr!</p>
+            <ul>
+                <li><a href="#1">Next</a>.</li>
+            </ul>
+        </div>
+        <div id="1">
+            <img src="sr-01.jpg"></img>
+            <p>There is a monster pirate.</p>
+            <ul>
+                <li><a href="#8">Refuse the call</a>.</li>
+                <li><a href="#9">Adventure</a>.</li>
+            </ul>
+        </div>
+        <div id="2">
+            <p>You encounter the pirate.</p>
+            <ul>
+                <li><a href="#12">Fight</a>.</li>
+                <li><a href="#3">Lay low</a>.</li>
+            </ul>
+        </div>
+        <div id="3">
+            <img src="sr-03.jpg"></img>
+            <p>You are rescued by Alice and Isaac.</p>
+            <ul>
+                <li><a href="#28">Steal the diamond tooth</a>.</li>
+                <li><a href="#4">Hide and observe</a>.</li>
+            </ul>
+        </div>
+        <div id="4">
+            <img src="sr-04.jpg"></img>
+            <p>Kill the demon octopus with a giant anchor.</p>
+            <ul>
+                <li><a href="#5">Steal the diamond tooth</a>.</li>
+                <li><a href="#26">Find the pirate</a>.</li>
+            </ul>
+        </div>
+        <div id="5">
+            <img src="sr-05.jpg"></img>
+            <p>Learn the pirate's tragic tale.</p>
+            <ul>
+                <li><a href="#6">Summon the sea witch</a>.</li>
+                <li><a href="#26">Find the pirate</a>.</li>
+                <li><a href="#29">Destroy the tooth</a>.</li>
+            </ul>
+        </div>
+        <div id="6">
+            <p>Encounter the sea witch.</p>
+            <ul>
+                <li><a href="#27">Sacrifice yourself</a>.</li>
+                <li><a href="#7">Negotiate with the sea witch</a>.</li>
+            </ul>
+        </div>
+        <div id="7">
+            <p>Sheila Nageira returns.</p>
+            <ul>
+                <li><a href="#10">Sacrifice yourself</a>.</li>
+                <li><a href="#29">Destroy the tooth</a>.</li>
+            </ul>
+        </div>
+        <div id="8">
+            <p>There is still a monster pirate.</p>
+            <ul>
+                <li><a href="#9">Next</a>.</li>
+            </ul>
+        </div>
+        <div id="9">
+            <p>Pirate spirit Sheila Nageira presents a plan.</p>
+            <ul>
+                <li><a href="#11">Next</a>.</li>
+            </ul>
+        </div>
+        <div id="10">
+            <p>You free the pirate from his curse.</p>
+            <ul>
+                <li><a href="#13">Next</a>.</li>
+            </ul>
+        </div>
+        <div id="11">
+            <p>The sea witch tempts you away.</p>
+            <ul>
+                <li><a href="#25">Succumb</a>.</li>
+                <li><a href="#2">Resist</a>.</li>
+            </ul>
+        </div>
+        <div id="12">
+            <p>Fight a thrall and get captured.</p>
+            <ul>
+                <li><a href="#3">Next</a>.</li>
+            </ul>
+        </div>
+        <div id="13">
+            <p>Outsmart the sea witch.</p>
+            <ul>
+                <li><a href="#14">Next</a>.</li>
+            </ul>
+        </div>
+        <div id="14">
+            <img src="sr-30.jpg"></img>
+            <p>Take the dinghy.</p>
+            <ul>
+                <li><a href="#15">Next</a>.</li>
+            </ul>
+        </div>
+        <div id="15">
+            <p>Return to the ordinary world with the missing children.</p>
+            <p class="theend">The End</p>
+        </div>
+        <div id="25">
+            <p>Your family and community suffers.</p>
+            <p class="theend">The End</p>
+        </div>
+        <div id="26">
+            <img src="sr-04.jpg"></img>
+            <p>The pirate kills you.</p>
+            <p class="theend">The End</p>
+        </div>
+        <div id="27">
+            <img src="sr-01.jpg"></img>
+            <p>You take the pirate's place in the curse.</p>
+            <p class="theend">The End</p>
+        </div>
+        <div id="28">
+            <img src="sr-28.jpg"></img>
+            <p>The demon octopus turns you into a thrall.</p>
+            <p class="theend">The End</p>
+        </div>
+        <div id="29">
+            <img src="sr-30.jpg"></img>
+            <p>You destroy the pirate, consigning him to the sea witch.</p>
+            <p class="theend">The End</p>
+        </div>
+        <script>
+            var cstate = {
+                location: window.location.hash
+            };
+            var node = function(state) {
+                return 1 < state.location.length ? state.location.substring(1) : '0';
+            }:
+            var display = function(id, v) {
+                document.getElementById(id).style.display = v;
+            };
+            var show = function(id) {
+                display(id, 'block');
+            };
+            var hide = function(id) {
+                display(id, 'none');
+            };
+            var navigated = function() {
+                hide(node(cstate));
+                cstate = {
+                    location: window.location.hash
+                };
+                show(node(cstate));
+            };
+            window.addEventListener('hashchange', navigated, false);
+            navigated();
+        </script>
+    </body>
 </html>
