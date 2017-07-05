@@ -28,8 +28,10 @@
         </style>
     </head>
     <body>
-        <h1>Skull Rock</h1>
-
+        <div id="-1">
+		<h1>Skull Rock</h1>
+            <ul> <li> <a href="#0">Next</a>.  </li> </ul>
+	</div>
         <div id="0">
 		<p class="title">Monsters on the Beach</p>
 		<p>Monday, April 17, 1617 St. John’s, Newfoundland</p>
@@ -292,7 +294,7 @@
                 location: window.location.hash
             };
             var node = function(state) {
-                return 1 < state.location.length ? state.location.substring(1) : '0';
+                return 1 < state.location.length ? state.location.substring(1) : '-1';
             };
             var display = function(id, v) {
                 document.getElementById(id).style.display = v;
