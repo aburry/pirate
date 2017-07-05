@@ -295,11 +295,12 @@
             <p class="theend">The End</p>
         </div>
         <script>
+            var init = '-2';
             var cstate = {
                 location: window.location.hash
             };
             var node = function(state) {
-                return 1 < state.location.length ? state.location.substring(1) : '-1';
+                return 1 < state.location.length ? state.location.substring(1) : init;
             };
             var display = function(id, v) {
                 document.getElementById(id).style.display = v;
