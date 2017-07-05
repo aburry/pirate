@@ -309,6 +309,7 @@
                     location: window.location.hash
                 };
                 show(node(cstate));
+		window.scrollTo(0,0);
             };
             window.addEventListener('hashchange', navigated, false);
             navigated();
